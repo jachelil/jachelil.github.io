@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Jalil's First Website</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #f0f0f0;
-        padding: 40px;
-      }
-      .container {
-        max-width: 600px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Hi, I'm Jalil </h1>
-      <p>I will post some stuff here as I get bored.</p>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jalil's First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 40px;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      font-size: 2.2em;
+    }
+    .thought {
+      font-style: italic;
+      color: #666;
+      margin-top: 20px;
+    }
+    .timestamp {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hi, I'm Jalil 👋</h1>
+    <p>I’ll post random things here whenever I’m bored. No big plans.</p>
+    
+    <p class="thought">Today’s thought: “What if every website started like this?”</p>
+
+    <div class="timestamp">
+      Last updated: <span id="date"></span>
     </div>
-  </body>
+  </div>
+
+  <script>
+    // Show today's date
+    const d = new Date();
+    document.getElementById("date").textContent = d.toDateString();
+  </script>
+</body>
 </html>
