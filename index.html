@@ -41,107 +41,159 @@
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 text-gray-800">
 
-    <div class="container max-w-4xl w-full mx-auto bg-white p-6 md:p-10 rounded-2xl shadow-xl space-y-8">
+    <div id="main-content-container" class="container max-w-4xl w-full mx-auto bg-white p-6 md:p-10 rounded-2xl shadow-xl space-y-8">
 
-        <!-- Header Section -->
-        <header class="text-center mb-8">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-4">
-                <span class="block">👋 Hi, I'm Jalil!</span>
-                <span class="block text-2xl md:text-3xl text-gray-700 font-semibold mt-2">
-                    A CS student who <span class="text-green-500">loves math</span> and <span class="text-red-500">hates coding</span> (so used LLMs to make this website!)
-                </span>
-            </h1>
-            <p class="text-lg md:text-xl text-gray-600 italic">
-                Welcome to my digital playground where I dump random thoughts and (mainly) math adventures (or misadventures)!
-            </p>
-        </header>
+        <!-- Initial Main Page Content (will be loaded dynamically) -->
+        <div id="main-page-content">
+            <!-- Header Section -->
+            <header class="text-center mb-8 relative">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-4">
+                    <span class="block">👋 Hi, I'm Jalil!</span>
+                    <span class="block text-2xl md:text-3xl text-gray-700 font-semibold mt-2">
+                        A CS student who <span class="text-green-500">loves math</span> and <span class="text-red-500">hates coding</span> (so used LLMs to make this website!)
+                    </span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 italic">
+                    Welcome to my digital playground where I dump random thoughts and (mainly) math adventures (or misadventures)!
+                </p>
+                <!-- About Me Button -->
+                <div class="mt-4">
+                    <button id="about-me-button" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
+                        About Me
+                    </button>
+                </div>
+            </header>
 
-        <!-- Main Content Sections -->
-        <main class="space-y-10">
+            <!-- Main Content Sections -->
+            <main class="space-y-10">
 
-            <!-- Last Problem I Solved Section -->
-            <section class="bg-gradient-to-br from-green-100 to-green-200 p-6 rounded-xl shadow-md border border-green-300">
-                <h2 class="text-2xl md:text-3xl font-bold text-green-700 mb-4 flex items-center">
-                    <svg class="w-8 h-8 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Last Problem I Solved!
-                </h2>
-                <div class="flex flex-col space-y-4">
-                    <div>
-                        <h3 class="text-xl font-semibold text-green-800 mb-2">Isomorphism between one-to-one functions</h3>
-                        <p class="text-gray-700">
-                            Let \(S_1\) and \(S_2\) be two sets. Suppose that there exists a one-to-one mapping \(f\) of \(S_1\) into \(S_2\). Show that there exists an isomorphism of \(A(S_1)\) into \(A(S_2)\), where \(A(S)\) is the set of all one-to-one mappings of \(S\) onto itself.
-                        </p>
-
-                        <div class="bg-green-50 p-4 mt-4 rounded-lg border border-green-200">
-                            <p class="text-gray-700 font-semibold mb-2">Solution:</p>
+                <!-- Last Problem I Solved Section -->
+                <section class="bg-gradient-to-br from-green-100 to-green-200 p-6 rounded-xl shadow-md border border-green-300">
+                    <h2 class="text-2xl md:text-3xl font-bold text-green-700 mb-4 flex items-center">
+                        <svg class="w-8 h-8 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Last Problem I Solved!
+                    </h2>
+                    <div class="flex flex-col space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-green-800 mb-2">Isomorphism between one-to-one functions</h3>
                             <p class="text-gray-700">
-                                For any function \(g_1\) in \(A(S_1) \), let \( h(g_1) = g_2 \) be a function such that if \(x\) is mapped to \(y\) in \(S_1\) by \(g_1 \), then \(g_2\) maps \(f(x)\) to \(f(y)\) and \(g_2\) maps each element in \(S_2 \setminus f(S_1) \) to itself. It's easy to see that \(h\) is an isomorphism of \(A(S_1)\) into \(A(S_2)\).
+                                Let \(S_1\) and \(S_2\) be two sets. Suppose that there exists a one-to-one mapping \(f\) of \(S_1\) into \(S_2\). Show that there exists an isomorphism of \(A(S_1)\) into \(A(S_2)\), where \(A(S)\) is the set of all one-to-one mappings of \(S\) onto itself.
+                            </p>
+
+                            <div class="bg-green-50 p-4 mt-4 rounded-lg border border-green-200">
+                                <p class="text-gray-700 font-semibold mb-2">Solution:</p>
+                                <p class="text-gray-700">
+                                    For any function \(g_1\) in \(A(S_1) \), let \( h(g_1) = g_2 \) be a function such that if \(x\) is mapped to \(y\) in \(S_1\) by \(g_1 \), then \(g_2\) maps \(f(x)\) to \(f(y)\) and \(g_2\) maps each element in \(S_2 \setminus f(S_1) \) to itself. It's easy to see that \(h\) is an isomorphism of \(A(S_1)\) into \(A(S_2)\).
+                                </p>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-2">
+                                <span class="font-medium">Date:</span> July 10, 2025
                             </p>
                         </div>
-                        <p class="text-sm text-gray-500 mt-2">
+                    </div>
+                </section>
+
+                <!-- Last Problem I Couldn't Solve Section -->
+                <section class="bg-gradient-to-br from-red-100 to-red-200 p-6 rounded-xl shadow-md border border-red-300">
+                    <h2 class="text-2xl md:text-3xl font-bold text-red-700 mb-4 flex items-center">
+                        <!-- Cross Icon with Circle SVG -->
+                        <svg class="w-8 h-8 mr-3 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Last Problem I Couldn't Solve (Yet!)
+                    </h2>
+                    <div class="flex flex-col space-y-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-red-800 mb-2">Subgroups of Finite Index</h3>
+                            <p class="text-gray-700">
+                                Struggling with the proof that if \(H\) is a subgroup of finite index in \(G\), then there is only a finite number of distinct subgroups in \(G\) of the form \(aHa^{-1}\).
+                            </p>
+                            <p class="text-sm text-gray-500 mt-2">
+                                <span class="font-medium">Date:</span> July 9, 2025
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Random Thoughts Section -->
+                <section class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-xl shadow-md border border-blue-300">
+                    <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-4 flex items-center">
+                        <svg class="w-8 h-8 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                        Random Updates 💭
+                    </h2>
+                    <div class="space-y-4 text-gray-700">
+                        <p>
+                            Started to section 2.8 of Herstein Algebra.
+                        </p>
+                        <p class="text-sm text-gray-500">
                             <span class="font-medium">Date:</span> July 10, 2025
                         </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Last Problem I Couldn't Solve Section -->
-            <section class="bg-gradient-to-br from-red-100 to-red-200 p-6 rounded-xl shadow-md border border-red-300">
-                <h2 class="text-2xl md:text-3xl font-bold text-red-700 mb-4 flex items-center">
-                    <!-- Cross Icon SVG -->
-                    <svg class="w-8 h-8 mr-3 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    Last Problem I Couldn't Solve (Yet!)
-                </h2>
-                <div class="flex flex-col space-y-4">
-                    <div>
-                        <h3 class="text-xl font-semibold text-red-800 mb-2">Subgroups of Finite Index</h3>
-                        <p class="text-gray-700">
-                            Struggling with the proof that if \(H\) is a subgroup of finite index in \(G\), then there is only a finite number of distinct subgroups in \(G\) of the form \(aHa^{-1}\).
+                        <hr class="border-blue-300">
+                        <p>
+                            Made a small progress in my current blockchain research project, but it made to loose my hope to get good results (it looks more impossible now 😭).
                         </p>
-                        <p class="text-sm text-gray-500 mt-2">
-                            <span class="font-medium">Date:</span> July 9, 2025
+                        <p class="text-sm text-gray-500">
+                            <span class="font-medium">Date:</span> July 8, 2025
+                        </p>
+                        <hr class="border-blue-300">
+                        <p>
+                            Finished section 2.7 of Herstein Algebra (but some end-section problems are left, specially starred ones).
+                        </p>
+                        <p class="text-sm text-gray-500">
+                            <span class="font-medium">Date:</span> July 8, 2025
                         </p>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- Random Thoughts Section -->
-            <section class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-xl shadow-md border border-blue-300">
-                <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-4 flex items-center">
-                    <svg class="w-8 h-8 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
-                    Random Musings & Updates 💭
-                </h2>
-                <div class="space-y-4 text-gray-700">
-                    <p>
-                        Started to section 2.8 of Herstein Algebra.
-                    </p>
-                    <p class="text-sm text-gray-500">
-                        <span class="font-medium">Date:</span> July 10, 2025
-                    </p>
-                    <hr class="border-blue-300">
-                    <p>
-                        Made a small progress in my current blockchain research project, but it made to loose my hope to get good results (it looks more impossible now 😭).
-                    </p>
-                    <p class="text-sm text-gray-500">
-                        <span class="font-medium">Date:</span> July 8, 2025
-                    </p>
-                    <hr class="border-blue-300">
-                    <p>
-                        Finished section 2.7 of Herstein Algebra (but some end-section problems are left, specially starred ones).
-                    </p>
-                    <p class="text-sm text-gray-500">
-                        <span class="font-medium">Date:</span> July 8, 2025
-                    </p>
-                </div>
-            </section>
+            </main>
 
-        </main>
+            <!-- Footer Section -->
+            <footer class="text-center text-gray-500 text-sm mt-10 pt-6 border-t border-gray-200">
+                <p>Last updated: <span id="date"></span></p>
+                <p class="mt-2">Built with a lot of help from LLMs.</p>
+            </footer>
+        </div>
 
-        <!-- Footer Section -->
-        <footer class="text-center text-gray-500 text-sm mt-10 pt-6 border-t border-gray-200">
-            <p>Last updated: <span id="date"></span></p>
-            <p class="mt-2">Built with a lot of help from LLMs.</p>
-        </footer>
+        <!-- About Me Page Content (hidden by default) -->
+        <div id="about-page-content" class="hidden">
+            <header class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-4">About Me! 🚀</h1>
+                <p class="text-lg md:text-xl text-gray-600 italic">
+                    A quick peek into my academic journey, skills, and research interests.
+                </p>
+            </header>
+
+            <main class="space-y-8">
+                <section class="bg-blue-50 p-6 rounded-xl border border-blue-200 shadow-sm">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.438m0-13.438a8.252 8.252 0 00-7.584 4.095m7.584-4.095a8.252 8.252 0 017.584 4.095m-7.584-4.095h.008v.008h-.008zM12 6.253c1.905 0 3.693.684 5.06 1.831L20.485 3.5M12 6.253c-1.905 0-3.693.684-5.06 1.831L3.515 3.5"></path></svg>
+                        My Journey So Far (Education)
+                    </h2>
+                    <p class="text-gray-700">
+                        I am currently 3rd Year Computer Science student at National University of Singapore (NUS). My academic focus has primarily been on different areas of Theoretical Computer Science, Distributed Algorithms, Mathematics and a bit of AI.
+                    </p>
+                </section>
+
+                <section class="bg-yellow-50 p-6 rounded-xl border border-yellow-200 shadow-sm">
+                    <h2 class="text-2xl font-bold text-yellow-700 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2H7a2 2 0 00-2 2v2m7-7h.01M7 15h.01M17 15h.01"></path></svg>
+                        My Research & Projects
+                    </h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Topics in Circuit Complexity (starting soon): Will work on algebraic circuit complexity as my UROP project.</li>
+                        <li>Blockchains (ongoing): Currently designing new blockchain system to improve (certain areas that I cannot mention)</li>
+                        <li>Sparse Autoencoders in LLMs (finished): Worked on a project to apply Sparse Autoencoders to LLMs to improve model's performance.</li>
+                    </ul>
+                    <p class="text-gray-700 mt-3">
+                        I'm always looking for opportunities to apply abstract mathematical concepts to real-world problems.
+                    </p>
+                </section>
+            </main>
+
+            <footer class="text-center text-gray-500 text-sm mt-10 pt-6 border-t border-gray-200">
+                <button id="back-to-main-button" class="text-blue-500 hover:underline">← Back to Main Page</button>
+            </footer>
+        </div>
 
     </div>
 
@@ -149,6 +201,42 @@
         // Show today's date
         const d = new Date();
         document.getElementById("date").textContent = d.toDateString();
+
+        // Get references to the main content container and page sections
+        const mainContentContainer = document.getElementById('main-content-container');
+        const mainPageContent = document.getElementById('main-page-content');
+        const aboutPageContent = document.getElementById('about-page-content');
+        const aboutMeButton = document.getElementById('about-me-button');
+        const backToMainButton = document.getElementById('back-to-main-button');
+
+        // Function to show the About Me page
+        function showAboutPage() {
+            mainPageContent.classList.add('hidden');
+            aboutPageContent.classList.remove('hidden');
+            // Re-typeset MathJax content after changing visibility
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+        }
+
+        // Function to show the Main page
+        function showMainPage() {
+            aboutPageContent.classList.add('hidden');
+            mainPageContent.classList.remove('hidden');
+            // Re-typeset MathJax content after changing visibility
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+        }
+
+        // Add event listeners
+        aboutMeButton.addEventListener('click', showAboutPage);
+        backToMainButton.addEventListener('click', showMainPage);
+
+        // Initial setup: Ensure only the main page content is visible
+        mainPageContent.classList.remove('hidden');
+        aboutPageContent.classList.add('hidden');
+
     </script>
 
     <!-- 🔍 Counter.dev analytics script -->
