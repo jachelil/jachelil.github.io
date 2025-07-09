@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jalil's Digital Playground</title>
+    <!-- Favicon - GitHub Logo -->
+    <link rel="icon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -13,11 +15,11 @@
     <script>
         window.MathJax = {
             tex: {
-                inlineMath: [['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                inlineMath: [['\\(', '\\)']], // Using \( and \) for inline math is more reliable
+                displayMath: [['$$', '$$'], ['\\[', '\\]']] // Standard display math delimiters
             },
             chtml: {
-                matchFontHeight: false
+                matchFontHeight: false // Prevents issues with font sizing
             }
         };
     </script>
@@ -28,7 +30,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+            background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec); /* Soft gradient background */
         }
     </style>
 </head>
