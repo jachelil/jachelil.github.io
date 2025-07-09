@@ -13,13 +13,11 @@
     <script>
         window.MathJax = {
             tex: {
-                // Using \( and \) for inline math is more reliable than $ and $
-                inlineMath: [['\\(', '\\)']], // Only enable \( \) for inline math
-                displayMath: [['$$', '$$'], ['\\[', '\\]']] // Standard display math delimiters
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
             },
-            // Optional: Configure how MathJax renders the output
             chtml: {
-                matchFontHeight: false // Prevents issues with font sizing
+                matchFontHeight: false
             }
         };
     </script>
@@ -30,7 +28,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec); /* Soft gradient background */
+            background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
         }
     </style>
 </head>
