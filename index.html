@@ -75,19 +75,19 @@
                     </h2>
                     <div class="flex flex-col space-y-4">
                         <div>
-                            <h3 class="text-xl font-semibold text-green-800 mb-2">Isomorphism between one-to-one functions</h3>
+                            <h3 class="text-xl font-semibold text-green-800 mb-2">Characteristic subgroup of Normal subgroup</h3>
                             <p class="text-gray-700">
-                                Let \(S_1\) and \(S_2\) be two sets. Suppose that there exists a one-to-one mapping \(f\) of \(S_1\) into \(S_2\). Show that there exists an isomorphism of \(A(S_1)\) into \(A(S_2)\), where \(A(S)\) is the set of all one-to-one mappings of \(S\) onto itself.
+                                If \(G\) is a group, \(N\) a normal subgroup of \(G\), \(M\) a characteristic subgroup of \(N\), prove that \(M\) is a normal subgroup of \(G\).
                             </p>
 
                             <div class="bg-green-50 p-4 mt-4 rounded-lg border border-green-200">
                                 <p class="text-gray-700 font-semibold mb-2">Solution:</p>
                                 <p class="text-gray-700">
-                                    For any function \(g_1\) in \(A(S_1) \), let \( h(g_1) = g_2 \) be a function such that if \(x\) is mapped to \(y\) in \(S_1\) by \(g_1 \), then \(g_2\) maps \(f(x)\) to \(f(y)\) and \(g_2\) maps each element in \(S_2 \setminus f(S_1) \) to itself. It's easy to see that \(h\) is an isomorphism of \(A(S_1)\) into \(A(S_2)\).
+                                    Take any element \(g\) of \(G\). Consider inner automorphism \(T_g: x \to gxg^{-1}\) for all \(x \in G\). Since \(N\) is normal in \(G\), \(T_g(N) = N\). So, \(T_g\) restricted on domain \(N\) is automorphism of \(N\). As \(M\) is characteristic subgroup of \(M\), \(T_g(M) = M\), i.e \(gMg^{-1} = M\). Hence, \(M\) is normal in \(G\).
                                 </p>
                             </div>
                             <p class="text-sm text-gray-500 mt-2">
-                                <span class="font-medium">Date:</span> July 10, 2025
+                                <span class="font-medium">Date:</span> July 11, 2025
                             </p>
                         </div>
                     </div>
@@ -104,12 +104,18 @@
                     </h2>
                     <div class="flex flex-col space-y-4">
                         <div>
-                            <h3 class="text-xl font-semibold text-red-800 mb-2">Subgroups of Finite Index</h3>
+                            <h3 class="text-xl font-semibold text-red-800 mb-2">Automorphism of order \(2\) in finite group</h3>
                             <p class="text-gray-700">
-                                Struggling with the proof that if \(H\) is a subgroup of finite index in \(G\), then there is only a finite number of distinct subgroups in \(G\) of the form \(aHa^{-1}\).
+                                Let \(G\) be a finite group, \(T\) an automorphism of \(G\) wiht the property that \(T(x) = x \iff x=e\) Suppose further that \(T^2=I\). Prove that \(G\) mus tbe abelian.
                             </p>
+                            <div class="bg-red-50 p-4 mt-4 rounded-lg border border-red-200">
+                                <p class="text-gray-700 font-semibold mb-2">Note:</p>
+                                <p class="text-gray-700">
+                                    Will work on it tomorrow again. Shouldn't be hard.
+                                </p>
+                            </div>
                             <p class="text-sm text-gray-500 mt-2">
-                                <span class="font-medium">Date:</span> July 9, 2025
+                                <span class="font-medium">Date:</span> July 11, 2025
                             </p>
                         </div>
                     </div>
