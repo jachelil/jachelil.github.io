@@ -94,15 +94,29 @@
         <!-- Initial Main Page Content -->
         <div id="main-page-content">
             <header class="text-center mb-8 relative">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-4">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-2">
                     <span class="block">👋 Hi, I'm Jalil!</span>
-                    <span class="block text-2xl md:text-3xl text-gray-700 font-semibold mt-2">
-                        A CS & Math student who <span class="text-green-500">loves math</span> and <span class="text-red-500">hates coding</span>!
-                    </span>
                 </h1>
+                <p class="text-2xl md:text-3xl text-gray-700 font-semibold mt-2 mb-6">
+                    A CS & Math student who <span class="text-green-500">loves math</span> and <span class="text-red-500">hates coding</span>!
+                </p>
+
+                <!-- QUICK STATS BADGES: Ensures researchers see this immediately -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <div class="bg-blue-50 border border-blue-200 text-blue-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
+                        <span class="mr-2">🎓</span> NUS CS & Math
+                    </div>
+                    <div class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
+                        <span class="mr-2">🥉</span> 2x IMO Bronze
+                    </div>
+                    <div class="bg-purple-50 border border-purple-200 text-purple-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
+                        <span class="mr-2">🔬</span> Researcher
+                    </div>
+                </div>
+
                 <div class="mt-4">
-                    <button id="about-me-button" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
-                        About Me
+                    <button id="about-me-button" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 flex items-center mx-auto">
+                        <span class="mr-2">👤</span> View Full Profile & CV
                     </button>
                 </div>
             </header>
@@ -194,7 +208,7 @@
 
                             </div>
                         </li>
-                        
+                         
                     </ul>
                 </section>
 
@@ -445,13 +459,13 @@
         function showAboutPage() {
             hideAll();
             aboutPageContent.classList.remove('hidden');
-            if (window.MathJax) MathJax.typesetPromise();
+            if (window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
         }
 
         function showMainPage() {
             hideAll();
             mainPageContent.classList.remove('hidden');
-            if (window.MathJax) MathJax.typesetPromise();
+            if (window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
         }
 
         function showResumePage() {
