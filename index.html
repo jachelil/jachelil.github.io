@@ -7,10 +7,10 @@
     <!-- Google Verification Tag -->
     <meta name="google-site-verification" content="5VKNt9-euIWoXjSLXigVCm_KGmUULie64w2oXsRHrdI" />
     
-    <!-- 1. SEO TITLE: Updated to "Student" -->
+    <!-- 1. SEO TITLE -->
     <title>Jalil Huseynov | CS & Math Student @ NUS</title>
     
-    <!-- 2. META DESCRIPTION: Updated to reflect student status -->
+    <!-- 2. META DESCRIPTION -->
     <meta name="description" content="Academic profile of Jalil Huseynov, a Computer Science & Mathematics undergraduate at NUS working on Theoretical CS and Blockchain. IMO Bronze Medalist.">
     <meta name="keywords" content="Jalil Huseynov, NUS, Computer Science, Mathematics, Student, Theoretical Computer Science, Blockchain, IMO Medalist, National University of Singapore, Undergraduate Researcher">
     <meta name="author" content="Jalil Huseynov">
@@ -48,8 +48,8 @@
     <link rel="icon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter for site, Merriweather for Resume -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Inter for site -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     
     <!-- MathJax Configuration -->
     <script>
@@ -70,61 +70,6 @@
             font-family: 'Inter', sans-serif;
             background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec); 
         }
-
-        /* Resume Specific Styles */
-        .resume-font {
-            font-family: 'Merriweather', serif;
-        }
-        .resume-header {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        .resume-section-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            border-bottom: 1px solid #ccc;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: #1a202c;
-        }
-        .resume-item {
-            margin-bottom: 0.75rem;
-        }
-        .resume-item-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: 700;
-        }
-        .resume-item-sub {
-            font-style: italic;
-            color: #4a5568;
-        }
-
-        /* Print Styles: Hides everything but the resume container when printing */
-        @media print {
-            body * {
-                visibility: hidden;
-            }
-            #resume-page-content, #resume-page-content * {
-                visibility: visible;
-            }
-            #resume-page-content {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                background: white;
-                padding: 0;
-                margin: 0;
-                box-shadow: none;
-            }
-            /* Hide navigation buttons when printing */
-            .no-print {
-                display: none !important;
-            }
-        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 text-gray-800">
@@ -138,7 +83,7 @@
                     <span class="block">👋 Hi, I'm Jalil!</span>
                 </h1>
                 <p class="text-2xl md:text-3xl text-gray-700 font-semibold mt-2 mb-6">
-                    A CS & Math student who <span class="text-green-500">loves math</span> and <span class="text-red-500">hates coding</span>!
+                    A CS & Math undergraduate student at National University of Singapore!
                 </p>
 
                 <!-- QUICK STATS BADGES -->
@@ -149,7 +94,6 @@
                     <div class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
                         <span class="mr-2">🥉</span> 2x IMO Bronze
                     </div>
-                    <!-- Updated Badge to be accurate -->
                     <div class="bg-purple-50 border border-purple-200 text-purple-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
                         <span class="mr-2">🔬</span> Undergrad Researcher
                     </div>
@@ -157,7 +101,7 @@
 
                 <div class="mt-4">
                     <button id="about-me-button" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 flex items-center mx-auto">
-                        <span class="mr-2">👤</span> View Full Profile & CV
+                        <span class="mr-2">👤</span> View Full Profile
                     </button>
                 </div>
             </header>
@@ -222,12 +166,6 @@
                 <p class="text-lg md:text-xl text-gray-600 italic mb-4">
                     A quick peek into my academic journey and research interests.
                 </p>
-                
-                <!-- NEW View Resume Button -->
-                <button id="view-resume-button" class="inline-flex items-center text-sm font-semibold text-white bg-gray-700 hover:bg-gray-800 px-5 py-2.5 rounded-lg transition-colors shadow-md">
-                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                    View Printable Resume
-                </button>
             </header>
 
             <main class="space-y-8">
@@ -342,140 +280,6 @@
             </footer>
         </div>
 
-        <!-- HTML RESUME PAGE CONTENT -->
-        <div id="resume-page-content" class="hidden resume-font text-gray-900 p-8 max-w-[210mm] mx-auto bg-white border border-gray-200 shadow-2xl relative">
-             <!-- Buttons to navigate/print -->
-             <div class="no-print absolute top-4 right-4 flex space-x-2">
-                <button onclick="window.print()" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">Print / Save PDF</button>
-                <button id="close-resume-button" class="bg-gray-200 text-gray-700 px-3 py-1 rounded text-sm hover:bg-gray-300">Close</button>
-            </div>
-
-            <!-- Header -->
-            <div class="text-center resume-header">
-                <h1 class="text-3xl font-bold uppercase tracking-wide mb-2">Jalil Huseynov</h1>
-                <p class="text-sm">
-                    Mobile: +65 8916 8754 | Email: jalil.huseynov@u.nus.edu <br>
-                    <a href="https://github.com/jachelil" class="text-blue-700 hover:underline">github.com/jachelil</a>
-                </p>
-            </div>
-
-            <!-- Education -->
-            <div class="resume-section">
-                <h2 class="resume-section-title">Education</h2>
-                <div class="resume-item">
-                    <div class="resume-item-header">
-                        <span>National University of Singapore</span>
-                        <span>Aug 2023 - May 2027</span>
-                    </div>
-                    <div class="resume-item-sub">Bachelor of Computing (Honours) in Computer Science | Second Major in Mathematics</div>
-                    <ul class="list-disc list-inside text-sm mt-1 ml-2">
-                        <li><strong>GPA:</strong> 4.86/5.00 (Highest Distinction) | Dean's List (AY 2024/25, Sem 2)</li>
-                        <li><strong>Relevant Courses:</strong> Combinatorics, Graph Theory, Theory of Computation, Distributed Algorithms, Optimisation Algorithms, Algorithmic Mechanism Design</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Research Experience -->
-            <div class="resume-section">
-                <h2 class="resume-section-title">Research Experience</h2>
-                <div class="resume-item">
-                    <div class="resume-item-header">
-                        <span>National University of Singapore</span>
-                        <span>May 2025 - Present</span>
-                    </div>
-                    <div class="resume-item-sub">Undergraduate Researcher (Supervisor: Assoc. Prof. Haifeng Yu)</div>
-                    <ul class="list-disc list-inside text-sm mt-1 ml-2">
-                        <li>Conducting research on novel blockchain protocols.</li>
-                    </ul>
-                </div>
-                <div class="resume-item">
-                    <div class="resume-item-header">
-                        <span>NUS Deep Learning Lab</span>
-                        <span>Aug 2024 - Apr 2025</span>
-                    </div>
-                    <div class="resume-item-sub">Undergraduate Researcher</div>
-                    <ul class="list-disc list-inside text-sm mt-1 ml-2">
-                        <li>Collaborated on optimizing LLMs for low-resource languages without additional data.</li>
-                        <li>Developed methods to address multilingual model inconsistencies, contributing to a co-authored paper.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Experience -->
-            <div class="resume-section">
-                <h2 class="resume-section-title">Internship & Work Experience</h2>
-                <div class="resume-item">
-                    <div class="resume-item-header">
-                        <span>Mercor</span>
-                        <span>Apr 2025 - Aug 2025</span>
-                    </div>
-                    <div class="resume-item-sub">Math Proofs Expert - AI Model Evaluation</div>
-                    <ul class="list-disc list-inside text-sm mt-1 ml-2">
-                        <li>Improving LLM performance on advanced math problem solving for a top-tier AI research org.</li>
-                        <li>Reviewed/corrected 1,000+ model responses, identifying subtle errors in logic.</li>
-                    </ul>
-                </div>
-                <div class="resume-item">
-                    <div class="resume-item-header">
-                        <span>National University of Singapore</span>
-                        <span>Aug 2024 - May 2025</span>
-                    </div>
-                    <div class="resume-item-sub">Teaching Assistant (Linear Algebra, Intro to AI & ML)</div>
-                    <ul class="list-disc list-inside text-sm mt-1 ml-2">
-                        <li>Taught weekly tutorials for 15-20 students; created quiz questions and graded assignments.</li>
-                    </ul>
-                </div>
-                <div class="resume-item">
-                    <div class="resume-item-header">
-                        <span>Kapital Bank, Azerbaijan</span>
-                        <span>Jul 2024 - Aug 2024</span>
-                    </div>
-                    <div class="resume-item-sub">Backend Developer Intern</div>
-                    <ul class="list-disc list-inside text-sm mt-1 ml-2">
-                        <li>Utilized Spring Boot (Java) to integrate new customer profiles into the banking system.</li>
-                    </ul>
-                </div>
-            </div>
-
-             <!-- Leadership -->
-             <div class="resume-section">
-                <h2 class="resume-section-title">Leadership & Outreach</h2>
-                <div class="resume-item">
-                    <div class="resume-item-header">
-                        <span>Ministry of Education of Azerbaijan Republic</span>
-                        <span>Aug 2023 - Present</span>
-                    </div>
-                    <div class="resume-item-sub">Math Olympiad Leader, Coordinator, and Coach</div>
-                    <ul class="list-disc list-inside text-sm mt-1 ml-2">
-                        <li>Coached national team for Junior Balkan MO 2024 (2nd place, 1 Gold, 5 Silver).</li>
-                        <li>Authored an original geometry problem shortlisted for JBMO 2023.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Awards -->
-            <div class="resume-section">
-                <h2 class="resume-section-title">Selected Awards</h2>
-                <ul class="list-disc list-inside text-sm ml-2">
-                    <li><strong>International Mathematical Olympiad (IMO):</strong> 2x Bronze Medals (2022, 2023)</li>
-                    <li><strong>Asian Pacific Mathematical Olympiad (APMO):</strong> Silver Medal (2023)</li>
-                    <li><strong>Junior Balkan Mathematical Olympiad (JBMO):</strong> Gold Medal (2021)</li>
-                    <li><strong>Azerbaijan National Maths Olympiad:</strong> 3x Gold Medals (2021-2023)</li>
-                </ul>
-            </div>
-
-            <!-- Skills -->
-             <div class="resume-section">
-                <h2 class="resume-section-title">Skills</h2>
-                <p class="text-sm">
-                    <strong>Programming:</strong> Python, Java, JavaScript, PyTorch, Spring Boot <br>
-                    <strong>Mathematics:</strong> Combinatorics, Graph Theory, Linear Algebra, Statistics, LaTeX, MATLAB <br>
-                    <strong>Languages:</strong> English, Turkish, Azerbaijani
-                </p>
-            </div>
-
-        </div>
-
     </div>
 
     <script>
@@ -486,24 +290,14 @@
         // References
         const mainPageContent = document.getElementById('main-page-content');
         const aboutPageContent = document.getElementById('about-page-content');
-        const resumePageContent = document.getElementById('resume-page-content');
-        const mainContentContainer = document.getElementById('main-content-container'); // To modify container styles for resume
         
         const aboutMeButton = document.getElementById('about-me-button');
         const backToMainButton = document.getElementById('back-to-main-button');
-        const viewResumeButton = document.getElementById('view-resume-button');
-        const closeResumeButton = document.getElementById('close-resume-button');
 
         // State Helper
         function hideAll() {
             mainPageContent.classList.add('hidden');
             aboutPageContent.classList.add('hidden');
-            resumePageContent.classList.add('hidden');
-            
-            // Reset container styles (remove Resume width overrides if any)
-            mainContentContainer.classList.add('max-w-4xl', 'rounded-2xl', 'shadow-xl', 'p-6', 'md:p-10', 'bg-white');
-            mainContentContainer.classList.remove('p-0', 'bg-transparent', 'shadow-none', 'max-w-none');
-            document.body.classList.remove('bg-gray-100'); // Reset body if needed
         }
 
         // Navigation Functions
@@ -519,19 +313,9 @@
             if (window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
         }
 
-        function showResumePage() {
-            hideAll();
-            resumePageContent.classList.remove('hidden');
-            // Remove some container styling to let the resume sheet stand out
-            mainContentContainer.classList.remove('max-w-4xl', 'rounded-2xl', 'shadow-xl', 'p-6', 'md:p-10', 'bg-white');
-            mainContentContainer.classList.add('p-0', 'bg-transparent', 'shadow-none', 'max-w-none');
-        }
-
         // Event Listeners
         aboutMeButton.addEventListener('click', showAboutPage);
         backToMainButton.addEventListener('click', showMainPage);
-        viewResumeButton.addEventListener('click', showResumePage);
-        closeResumeButton.addEventListener('click', showAboutPage); // Goes back to About Me
 
         // Initial setup
         showMainPage();
