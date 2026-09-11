@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Google Verification Tag -->
     <meta name="google-site-verification" content="5VKNt9-euIWoXjSLXigVCm_KGmUULie64w2oXsRHrdI" />
-    
+
     <!-- 1. SEO TITLE -->
     <title>Jalil Huseynov | CS & Math Student @ NUS</title>
-    
+
     <!-- 2. META DESCRIPTION -->
     <meta name="description" content="Academic profile of Jalil Huseynov, a Computer Science & Mathematics undergraduate at NUS working on Theoretical CS and Blockchain. IMO Bronze Medalist.">
     <meta name="keywords" content="Jalil Huseynov, NUS, Computer Science, Mathematics, Student, Theoretical Computer Science, Blockchain, IMO Medalist, National University of Singapore, Undergraduate Researcher">
     <meta name="author" content="Jalil Huseynov">
-    
+
     <!-- 3. SOCIAL CARDS -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Jalil Huseynov | CS & Math Student @ NUS">
     <meta property="og:description" content="CS & Math Undergraduate at NUS. IMO Medalist. Interested in Theoretical CS, Distributed Algorithms, and AI.">
-    <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg"> 
-    
+    <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+
     <!-- 4. GOOGLE KNOWLEDGE GRAPH DATA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Jalil Huseynov",
-      "url": "https://jachelil.github.io", 
+      "url": "https://jachelil.github.io",
       "jobTitle": "Undergraduate Student",
       "affiliation": {
         "@type": "Organization",
@@ -50,293 +50,245 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter for site -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- MathJax Configuration -->
     <script>
         window.MathJax = {
             tex: {
-                inlineMath: [['\\(', '\\)']], 
-                displayMath: [['$$', '$$'], ['\\[', '\\]']], 
-                packages: {'[+]': ['ams', 'color', 'noerrors']} 
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                packages: {'[+]': ['ams', 'color', 'noerrors']}
             },
             chtml: { matchFontHeight: false },
             options: { ignoreHtmlClass: 'tex2jax_ignore', processHtmlClass: 'tex2jax_process' }
         };
     </script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec); 
+            background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
         }
+        details > summary { cursor: pointer; list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 text-gray-800">
+<body class="min-h-screen flex flex-col items-center p-4 md:p-8 text-gray-800">
 
-    <div id="main-content-container" class="container max-w-4xl w-full mx-auto bg-white p-6 md:p-10 rounded-2xl shadow-xl space-y-8">
+    <div class="container max-w-4xl w-full mx-auto bg-white p-6 md:p-10 rounded-2xl shadow-xl space-y-8">
 
-        <!-- Initial Main Page Content -->
-        <div id="main-page-content">
-            <header class="text-center mb-8 relative">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-2">
-                    <span class="block">Hi, I'm Jalil!</span>
-                </h1>
-                <p class="text-2xl md:text-3xl text-gray-700 font-semibold mt-2 mb-6">
-                    A CS & Math undergraduate student at National University of Singapore.
-                </p>
+        <!-- HERO -->
+        <header class="text-center mb-2">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-2">
+                <span class="block">Hi, I'm Jalil!</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-700 font-semibold mt-2 mb-4">
+                CS & Math undergraduate at the National University of Singapore.
+            </p>
+            <p class="max-w-2xl mx-auto text-gray-600">
+                I work on Theoretical Computer Science, Distributed Algorithms, and Mathematics — currently researching
+                Byzantine fault-tolerant blockchain protocols with Assoc. Prof. Haifeng Yu.
+            </p>
 
-                <!-- QUICK STATS BADGES -->
-                <div class="flex flex-wrap justify-center gap-3 mb-8">
-                    <div class="bg-blue-50 border border-blue-200 text-blue-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
-                        <span class="mr-2">🎓</span> NUS CS & Math
-                    </div>
-                    <div class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
-                        <span class="mr-2">🥉</span> 2x IMO Bronze
-                    </div>
-                    <div class="bg-purple-50 border border-purple-200 text-purple-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
-                        <span class="mr-2">🔬</span> Undergrad Researcher
-                    </div>
+            <div class="flex flex-wrap justify-center gap-3 my-6">
+                <div class="bg-blue-50 border border-blue-200 text-blue-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
+                    <span class="mr-2">🎓</span> NUS CS & Math
                 </div>
-
-                <div class="mt-4">
-                    <button id="about-me-button" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 flex items-center mx-auto">
-                        <span class="mr-2">👤</span> View Full Profile
-                    </button>
+                <div class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
+                    <span class="mr-2">🥉</span> 2x IMO Bronze
                 </div>
-            </header>
+                <div class="bg-purple-50 border border-purple-200 text-purple-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm flex items-center">
+                    <span class="mr-2">🔬</span> Undergrad Researcher
+                </div>
+            </div>
 
-            <main class="space-y-10">
-                <!-- Problem Working On -->
-                <section class="bg-gradient-to-br from-green-100 to-green-200 p-6 rounded-xl shadow-md border border-green-300">
-                    <h2 class="text-2xl md:text-3xl font-bold text-green-700 mb-4 flex items-center">
-                        The Problem I'm working on
-                    </h2>
-                    <div class="flex flex-col space-y-4">
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:jalil.huseynov@u.nus.edu" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    Email
+                </a>
+                <a href="https://github.com/jachelil" target="_blank" class="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </header>
+
+        <main class="space-y-10">
+
+            <!-- AWARDS (priority section, right after hero) -->
+            <section class="bg-purple-50 p-6 rounded-xl border border-purple-200 shadow-sm">
+                <h2 class="text-2xl font-bold text-purple-700 mb-4">Honors & Awards</h2>
+                <ul class="space-y-4 text-gray-800">
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3" role="img" aria-label="medal">🥉</span>
                         <div>
-                            <h3 class="text-xl font-semibold text-green-800 mb-2">Erdös Problem 106</h3>
-                            <p class="text-gray-700">
-                                Draw \( n \) squares inside the unit square with no common interior point. 
-                                Let \( f(n) \) be the maximum possible sum of the side-lengths of the squares. 
-                                Is \( f(k^2 + 1) = k \)?
-                            </p>
-                            <div class="bg-green-50 p-4 mt-4 rounded-lg border border-green-200">
-                                <p class="text-gray-700 font-semibold mb-2">Current thoughts / Sketch:</p>
-                                <p class="text-gray-700">
-                                    It's easy to show \(f(k^2 + 1) \geq k\) with a simple example and it's conjecture that \(f(k^2 + 1) = k\) holds. 
-                                    Baek et al. showed that if we further assume that sides of all squares are parallel to the sides of the unit square, 
-                                    then the maximum total side length of \(k^2 + 1\) squares is \(k\). 
-                                    See <a href="https://arxiv.org/abs/2411.07274" class="text-blue-600 hover:underline hover:text-blue-800" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2411.07274</a>.
-                                </p>
-                            </div>
-                            <p class="text-sm text-gray-500 mt-2">
-                                <span class="font-medium">Date:</span> Dec 25, 2025
-                            </p>
+                            <span class="font-bold text-lg">2x IMO Bronze Medal</span><br>
+                            <span class="text-gray-600">International Mathematical Olympiad — 2022, 2023</span>
+                            <a href="https://www.imo-official.org/participant_r.aspx?id=32112" target="_blank" class="ml-2 text-sm text-blue-600 hover:underline bg-white px-2 py-0.5 rounded border border-blue-200">View Profile ↗</a>
                         </div>
-                    </div>
-                </section>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3" role="img" aria-label="medal">🥈</span>
+                        <div>
+                            <span class="font-bold text-lg">APMO Silver Medal</span><br>
+                            <span class="text-gray-600">Asian Pacific Mathematical Olympiad — 2023</span>
+                            <a href="https://www.apmo-official.org/country_report/AZE/2023" target="_blank" class="ml-2 text-sm text-blue-600 hover:underline bg-white px-2 py-0.5 rounded border border-blue-200">Link ↗</a>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3" role="img" aria-label="medal">🥇</span>
+                        <div>
+                            <span class="font-bold text-lg">JBMO Gold Medal</span><br>
+                            <span class="text-gray-600">Junior Balkan Mathematical Olympiad — 2021</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3" role="img" aria-label="trophy">🏆</span>
+                        <div>
+                            <span class="font-bold text-lg">3x Rank 1 Nationally</span><br>
+                            <span class="text-gray-600">Azerbaijan National Mathematical Olympiad — 2021, 2022, 2023</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3" role="img" aria-label="trophy">🎓</span>
+                        <div>
+                            <span class="font-bold text-lg">2x Dean's List</span><br>
+                            <span class="text-gray-600">National University of Singapore — AY24/25 Sem 2, AY25/26 Sem 1</span>
+                            <a href="https://credentials.nus.edu.sg/profile/huseynovjalil55133/wallet" target="_blank" class="ml-2 text-sm text-blue-600 hover:underline bg-white px-2 py-0.5 rounded border border-blue-200">View Certificates ↗</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
-                <!-- Random Updates -->
-                <section class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-xl shadow-md border border-blue-300">
-                    <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-4 flex items-center">
-                        Random Updates 
-                    </h2>
-                    <ul class="space-y-3 text-gray-800">
-                        <li class="flex items-start bg-white/50 p-3 rounded-lg shadow-sm border border-blue-200">
-                            <span class="text-blue-500 mr-3 mt-0.5">●</span>
-                            <div><strong>May 2026:</strong> Started the RIPS 2026 summer research program.</div>
-                        </li>
-                        <li class="flex items-start bg-white/50 p-3 rounded-lg shadow-sm border border-blue-200">
-                            <span class="text-blue-500 mr-3 mt-0.5">●</span>
-                            <div><strong>May 2026:</strong> Completed my UROP project on the Polynomial Freiman–Ruzsa Theorem.</div>
-                        </li>
-                    </ul>
-                </section>
-            </main>
+            <!-- RESEARCH -->
+            <section class="bg-yellow-50 p-6 rounded-xl border border-yellow-200 shadow-sm">
+                <h2 class="text-2xl font-bold text-yellow-700 mb-4">Research & Projects</h2>
+                <ul class="list-disc list-inside text-gray-700 space-y-3">
+                    <li>
+                        <strong>Byzantine Fault-Tolerant Blockchain Protocols</strong> — Final Year Project, advised by Assoc. Prof. Haifeng Yu.
+                        Designing a protocol with novel bandwidth-efficiency guarantees. <span class="text-gray-500">(May 2026 – Present)</span>
+                    </li>
+                    <li>
+                        <strong>Knowledge Graph Completion for Smart Buildings</strong> — RIPS 2026, sponsored by Kajima Corporation.
+                        Built and benchmarked an LLM-based pipeline against 3 ML approaches. <span class="text-gray-500">(May – Jul 2026)</span>
+                    </li>
+                    <li>
+                        <strong>Entropic Nearly Linear Freiman-Ruzsa Theorem (ENLFR)</strong> — UROP, advised by Assoc. Prof. Divesh Aggarwal.
+                        Formulated ENLFR and proved its equivalence to Entropic PFR, extending the 2023 Gowers-Green-Manners-Tao result.
+                        <span class="text-gray-500">(Aug 2025 – May 2026)</span>
+                    </li>
+                    <li>
+                        <strong>LLM Optimisation for Low-Resource Languages</strong> — NUS Deep Learning Lab.
+                        Co-authored a paper on improving cross-lingual generalisation without additional data.
+                        See <a href="https://arxiv.org/abs/2507.18918" class="text-blue-600 hover:underline hover:text-blue-800" target="_blank" rel="noopener noreferrer">paper</a>.
+                        <span class="text-gray-500">(Aug 2024 – Apr 2025)</span>
+                    </li>
+                </ul>
+            </section>
 
-            <footer class="text-center text-gray-500 text-sm mt-10 pt-6 border-t border-gray-200">
-                <div class="flex justify-center space-x-6 mb-4">
-                    <a href="mailto:jalil.huseynov@u.nus.edu" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        Email Me
-                    </a>
-                    <a href="https://github.com/jachelil" target="_blank" class="flex items-center text-gray-600 hover:text-gray-900 transition-colors">
-                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        GitHub
-                    </a>
+            <!-- CURRENT PROBLEM -->
+            <section class="bg-green-100 p-6 rounded-xl shadow-md border border-green-300">
+                <h2 class="text-2xl font-bold text-green-700 mb-4">The Problem I'm Working On</h2>
+                <h3 class="text-xl font-semibold text-green-800 mb-2">Erdös Problem 106</h3>
+                <p class="text-gray-700">
+                    Draw \( n \) squares inside the unit square with no common interior point.
+                    Let \( f(n) \) be the maximum possible sum of the side-lengths of the squares.
+                    Is \( f(k^2 + 1) = k \)?
+                </p>
+                <div class="bg-green-50 p-4 mt-4 rounded-lg border border-green-200">
+                    <p class="text-gray-700 font-semibold mb-2">Current thoughts / Sketch:</p>
+                    <p class="text-gray-700">
+                        It's easy to show \(f(k^2 + 1) \geq k\) and it's conjectured that \(f(k^2 + 1) = k\) holds.
+                        Baek et al. showed that if we further assume the sides of all squares are parallel to the sides of the unit square,
+                        then the maximum total side length of \(k^2 + 1\) squares is \(k\).
+                        See <a href="https://arxiv.org/abs/2411.07274" class="text-blue-600 hover:underline hover:text-blue-800" target="_blank" rel="noopener noreferrer">arXiv:2411.07274</a>.
+                    </p>
                 </div>
-                <p>Last updated: <span id="date"></span></p>
-            </footer>
-        </div>
+                <p class="text-sm text-gray-500 mt-2"><span class="font-medium">Date:</span> Dec 25, 2025</p>
+            </section>
 
-        <!-- About Me Page Content -->
-        <div id="about-page-content" class="hidden">
-            <header class="text-center mb-8">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-4">About Me</h1>
-            </header>
+            <!-- TEACHING -->
+            <section class="bg-orange-50 p-6 rounded-xl border border-orange-200 shadow-sm">
+                <h2 class="text-2xl font-bold text-orange-700 mb-4">Teaching Experience</h2>
+                <p class="text-gray-700 mb-4">Teaching Assistant, National University of Singapore — Aug 2024 – Present</p>
+                <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                    <li><strong>Distributed Systems</strong> (AY26/27 Sem 1): Course administration and student team formation.</li>
+                    <li><strong>Introduction to AI & ML</strong> (AY26/27 Sem 1): Weekly tutorials and problem-set grading.</li>
+                    <li><strong>Parallel and Distributed Algorithms</strong> (AY25/26 Sem 2): Weekly consultation sessions.</li>
+                    <li><strong>Introduction to AI & ML</strong> (AY24/25 Sem 2): Weekly tutorials and problem-set grading.</li>
+                    <li><strong>Linear Algebra for Computing</strong> (AY24/25 Sem 1): Weekly tutorials and quiz creation.</li>
+                </ul>
+            </section>
 
-            <main class="space-y-8">
-                <section class="bg-blue-50 p-6 rounded-xl border border-blue-200 shadow-sm">
-                    <h2 class="text-2xl font-bold text-blue-700 mb-3 flex items-center">Education & Interests</h2>
-                    <div class="text-gray-700 space-y-2">
-                        <p>I am currently a final-year <strong>Computer Science and Mathematics</strong> student at the National University of Singapore (NUS). My academic focus is on Theoretical Computer Science, Distributed Algorithms, and Mathematics.</p>
-                        <p class="text-sm bg-white inline-block px-3 py-1 rounded-md border border-blue-100 shadow-sm"><span class="font-semibold text-blue-800">GPA:</span> 4.79 / 5.00 (Highest Distinction)</p>
-                    </div>
-                </section>
+            <!-- MATH OUTREACH -->
+            <section class="bg-teal-50 p-6 rounded-xl border border-teal-200 shadow-sm">
+                <h2 class="text-2xl font-bold text-teal-700 mb-4">Math Outreach & Problem Setting</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start"><span class="text-teal-500 mr-2 mt-1">●</span><div><strong>Math Proofs Expert (Mercor):</strong> Worked with a leading AI research organisation on improving LLM performance on advanced mathematical problem solving, reviewing 1,200+ model-generated responses.</div></li>
+                    <li class="flex items-start"><span class="text-teal-500 mr-2 mt-1">●</span><div><strong>National Team Coach:</strong> Coached the Azerbaijan National Team to 2nd place at Junior Balkan Math Olympiad 2024, among 20+ countries.</div></li>
+                    <li class="flex items-start"><span class="text-teal-500 mr-2 mt-1">●</span><div><strong>Problem Author:</strong> Authored an original geometry problem shortlisted for JBMO 2023.</div></li>
+                </ul>
+            </section>
 
-                <section class="bg-purple-50 p-6 rounded-xl border border-purple-200 shadow-sm">
-                    <h2 class="text-2xl font-bold text-purple-700 mb-4 flex items-center">Honors & Awards</h2>
-                    <ul class="space-y-4 text-gray-800">
-                        <li class="flex items-start">
-                            <span class="text-2xl mr-3" role="img" aria-label="medal">🥉</span>
-                            <div>
-                                <span class="font-bold text-lg">2x IMO Bronze Medal</span> <br>
-                                <span class="text-gray-600">International Mathematical Olympiad (IMO) - 2022, 2023</span>
-                                <a href="https://www.imo-official.org/participant_r.aspx?id=32112" target="_blank" class="ml-2 text-sm text-blue-600 hover:underline bg-white px-2 py-0.5 rounded border border-blue-200">View Profile ↗</a>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-2xl mr-3" role="img" aria-label="trophy">🏆</span>
-                            <div>
-                                <span class="font-bold text-lg">2x Dean's List</span> <br>
-                                <span class="text-gray-600">National University of Singapore (NUS) - AY24/25 Sem 2, AY25/26 Sem 1</span>
-                                <a href="https://credentials.nus.edu.sg/profile/huseynovjalil55133/wallet" target="_blank" class="ml-2 text-sm text-blue-600 hover:underline bg-white px-2 py-0.5 rounded border border-blue-200">View Certificates ↗</a>
-
-                            </div>
-                        </li>
-                         
-                    </ul>
-                </section>
-
-                <section class="bg-orange-50 p-6 rounded-xl border border-orange-200 shadow-sm">
-                    <h2 class="text-2xl font-bold text-orange-700 mb-4 flex items-center">Teaching Experience</h2>
-                    <p class="text-gray-700 mb-4">I have served as a Teaching Assistant for undergraduate courses at NUS.</p>
-                    <div class="space-y-4">
-                        <div class="bg-white p-3 rounded-lg border border-orange-100 shadow-sm">
-                            <div class="flex justify-between items-baseline mb-1">
-                                <h3 class="font-bold text-gray-800">Teaching Assistant</h3>
-                                <span class="text-sm text-gray-500">Aug 2024 - Present</span>
-                            </div>
-                            <p class="text-sm text-gray-600 italic mb-2">National University of Singapore</p>
-                            <ul class="list-disc list-inside text-sm text-gray-700">
-                                <li><strong>Distributed Systems (AY 26/27 Sem 1) </strong>: Assisted with course administration and student team formation.</li>
-                                <li><strong>Introduction to AI & ML (AY 26/27 Sem 1) </strong>: Conducted weekly tutorials and graded weekly problem set submissions.</li>
-                                <li><strong>Parallel and Distributed Algorithms (AY 25/26 Sem 2) </strong>: Conducting weekly consultation sessions for students to help them to understand the topics better.</li>
-                                <li><strong>Introduction to AI & ML (AY 24/25 Sem 2) </strong>: Conducted weekly tutorials and graded weekly problem set submissions.</li>
-                                <li><strong>Linear Algebra for Computing (AY 24/25 Sem 1) </strong>: Conducted weekly tutorials and created quiz questions.</li>
-                
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="bg-teal-50 p-6 rounded-xl border border-teal-200 shadow-sm">
-                    <h2 class="text-2xl font-bold text-teal-700 mb-4 flex items-center">Math Outreach & Problem Setting</h2>
-                    <ul class="space-y-3 text-gray-700">
-                        <li class="flex items-start"><span class="text-teal-500 mr-2 mt-1">●</span><div><strong>Math Proofs Expert (Mercor):</strong> Worked with leading AI Research Labs on improving LLM performance on advanced mathematical problem solving by reviewing 1,000+ model-generated responses.</div></li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2 mt-1">●</span><div><strong>Problem Author:</strong> Authored an original geometry problem that was shortlisted for the <span class="italic">Junior Balkan Mathematical Olympiad (JBMO) 2023</span>.</div></li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2 mt-1">●</span><div><strong>National Team Coach:</strong> Coached the Azerbaijan National Team for Junior Balkan Math Olympiad 2024 (Team achieved 2nd place among 20+ countries).</div></li>
-                    </ul>
-                </section>
-
-                <section class="bg-yellow-50 p-6 rounded-xl border border-yellow-200 shadow-sm">
-                    <h2 class="text-2xl font-bold text-yellow-700 mb-3 flex items-center">Research & Projects</h2>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li><strong>Blockchain Protocols: </strong> Researching novel blockchain protocols under the supervision of Assoc. Prof. Haifeng Yu as part of my Final Year Project.</li>
-                        <li><strong>Polynomial Freiman–Ruzsa Theorem (UROP Project): </strong> Proposed an alternative formulation of the Polynomial Freiman–Ruzsa Theorem under Assoc. Prof. Divesh Aggarwal.</li>
-                        <li><strong>Sparse Autoencoders in LLMs: </strong> Applied Sparse Autoencoders to improve LLM performance for low-resource languages. See <a href="https://arxiv.org/abs/2507.18918" class="text-blue-600 hover:underline hover:text-blue-800" target="_blank" rel="noopener noreferrer">paper</a>.</li>
-                    </ul>
-                </section>
-
-                <section class="bg-gradient-to-br from-indigo-100 to-indigo-200 p-6 rounded-xl shadow-md border border-indigo-300">
-                    <h2 class="text-2xl md:text-3xl font-bold text-indigo-700 mb-4 flex items-center">Major Courses</h2>
-                    <div class="flex flex-col space-y-6">
+            <!-- COURSES (collapsed by default) -->
+            <section class="bg-indigo-100 p-6 rounded-xl shadow-md border border-indigo-300">
+                <details>
+                    <summary class="flex items-center justify-between">
+                        <h2 class="text-2xl font-bold text-indigo-700">Courses & Grades</h2>
+                        <span class="text-indigo-600 text-sm font-semibold border border-indigo-300 rounded-full px-3 py-1 bg-white/60">Show all ▾</span>
+                    </summary>
+                    <div class="flex flex-col space-y-6 mt-4">
                         <div class="bg-white/60 p-4 rounded-lg shadow-sm">
                             <h3 class="text-xl font-bold text-indigo-800 mb-3 border-b-2 border-indigo-200 pb-1">CS Courses</h3>
-                            <ul class="space-y-3">
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS1101S: Programming Methodology</span> <span class="font-bold text-indigo-600 w-8 flex-none">A-</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS1231S: Discrete Structures</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS2030S: Programming Methodology II</span> <span class="font-bold text-indigo-600 w-8 flex-none">B+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS2040S: Data Structures & Algorithms</span> <span class="font-bold text-indigo-600 w-8 flex-none">A</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS2100: Computer Organisation</span> <span class="font-bold text-indigo-600 w-8 flex-none">A-</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS2109S: Introduction to AI & Machine Learning </span> <span class="font-bold text-indigo-600 w-8 flex-none">A</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS3230: Design & Analysis of Algorithms</span> <span class="font-bold text-indigo-600 w-8 flex-none">A</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS3231: Theory of Computation</span> <span class="font-bold text-indigo-600 w-8 flex-none">A-</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS3263: Foundations of Artificial Intelligence</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS4231: Parallel & Distributed Algorithms</span> <span class="font-bold text-indigo-600 w-8 flex-none">A</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS4234: Optimisation Algorithms</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS4261: Algorithmic Mechanism Design</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS5275: The Algorithm Designer's Toolkit</span> <span class="font-bold text-indigo-600 w-8 flex-none">A</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CP3209: Undergraduate Research Project in Computing</span> <span class="font-bold text-indigo-600 w-8 flex-none">A-</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CS2106: Introduction to Operating Systems</span> <span class="font-bold text-indigo-600 w-8 flex-none">IP</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">CP4101: B.Comp. Dissertation</span> <span class="font-bold text-indigo-600 w-8 flex-none">IP</span></li>
-
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex justify-between"><span class="text-gray-700">CS1101S: Programming Methodology</span><span class="font-bold text-indigo-600">A-</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS1231S: Discrete Structures</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS2030S: Programming Methodology II</span><span class="font-bold text-indigo-600">B+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS2040S: Data Structures & Algorithms</span><span class="font-bold text-indigo-600">A</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS2100: Computer Organisation</span><span class="font-bold text-indigo-600">A-</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS2109S: Introduction to AI & Machine Learning</span><span class="font-bold text-indigo-600">A</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS3230: Design & Analysis of Algorithms</span><span class="font-bold text-indigo-600">A</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS3231: Theory of Computation</span><span class="font-bold text-indigo-600">A-</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS3263: Foundations of Artificial Intelligence</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS4231: Parallel & Distributed Algorithms</span><span class="font-bold text-indigo-600">A</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS4234: Optimisation Algorithms</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS4261: Algorithmic Mechanism Design</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS5275: The Algorithm Designer's Toolkit</span><span class="font-bold text-indigo-600">A</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CP3209: Undergraduate Research Project in Computing</span><span class="font-bold text-indigo-600">A-</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CS2106: Introduction to Operating Systems</span><span class="font-bold text-indigo-600">IP</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">CP4101: B.Comp. Dissertation</span><span class="font-bold text-indigo-600">IP</span></li>
                             </ul>
                         </div>
                         <div class="bg-white/60 p-4 rounded-lg shadow-sm">
                             <h3 class="text-xl font-bold text-indigo-800 mb-3 border-b-2 border-indigo-200 pb-1">Math Courses</h3>
-                            <ul class="space-y-3">
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA1521: Calculus for Computing</span> <span class="font-bold text-indigo-600 w-8 flex-none">A</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA1522: Linear Algebra for Computing</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA2101: Linear Algebra II</span> <span class="font-bold text-indigo-600 w-8 flex-none">A</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">ST2334: Probability and Statistics</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA2214: Combinatorics & Graphs I</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA3233: Combinatorics and Graphs II</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA2108: Mathematical Analysis I</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA3210: Mathematical Analysis II</span> <span class="font-bold text-indigo-600 w-8 flex-none">A-</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA3209: Metric and Topological Spaces</span> <span class="font-bold text-indigo-600 w-8 flex-none">A+</span></li>
-                                <li class="flex justify-between items-start"><span class="text-gray-700 flex-1 pr-2">MA4207: Mathematical Logic</span> <span class="font-bold text-indigo-600 w-8 flex-none">IP</span></li>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex justify-between"><span class="text-gray-700">MA1521: Calculus for Computing</span><span class="font-bold text-indigo-600">A</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">MA1522: Linear Algebra for Computing</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">MA2101: Linear Algebra II</span><span class="font-bold text-indigo-600">A</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">ST2334: Probability and Statistics</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">MA2214: Combinatorics & Graphs I</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">MA3233: Combinatorics and Graphs II</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">MA2108: Mathematical Analysis I</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">MA3210: Mathematical Analysis II</span><span class="font-bold text-indigo-600">A-</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">MA3209: Metric and Topological Spaces</span><span class="font-bold text-indigo-600">A+</span></li>
+                                <li class="flex justify-between"><span class="text-gray-700">MA4207: Mathematical Logic</span><span class="font-bold text-indigo-600">IP</span></li>
                             </ul>
                         </div>
                     </div>
-                </section>
-            </main>
+                </details>
+            </section>
 
-            <footer class="text-center text-gray-500 text-sm mt-10 pt-6 border-t border-gray-200">
-                <button id="back-to-main-button" class="text-blue-500 hover:underline">← Back to Main Page</button>
-            </footer>
-        </div>
-
+        </main>
     </div>
 
     <script>
-        // Show today's date
         const d = new Date();
         document.getElementById("date").textContent = d.toDateString();
-
-        // References
-        const mainPageContent = document.getElementById('main-page-content');
-        const aboutPageContent = document.getElementById('about-page-content');
-        
-        const aboutMeButton = document.getElementById('about-me-button');
-        const backToMainButton = document.getElementById('back-to-main-button');
-
-        // State Helper
-        function hideAll() {
-            mainPageContent.classList.add('hidden');
-            aboutPageContent.classList.add('hidden');
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.addEventListener('load', () => MathJax.typesetPromise());
         }
-
-        // Navigation Functions
-        function showAboutPage() {
-            hideAll();
-            aboutPageContent.classList.remove('hidden');
-            if (window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
-        }
-
-        function showMainPage() {
-            hideAll();
-            mainPageContent.classList.remove('hidden');
-            if (window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
-        }
-
-        // Event Listeners
-        aboutMeButton.addEventListener('click', showAboutPage);
-        backToMainButton.addEventListener('click', showMainPage);
-
-        // Initial setup
-        showMainPage();
-
     </script>
 
     <!-- 🔍 Counter.dev analytics script -->
